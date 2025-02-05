@@ -16,13 +16,13 @@ def display_menu():
 
 # Calculate change
 def calculate_change(payment, cost):
-    return payment - cost
+    return payment - cost # there was an unnecessary - 10 so the change wouldn't display correctly
 
 # Operate Vending Machine
-def vending_machine():
-    items = {"1": 1.25, "2": 1.00, "3": 0.75} 
+def vending_machine(): 
+    items = {"1": 1.25, "2": 1.00, "3": 0.75} # number 3 was missing
     while True:
-        display_menu()
+        display_menu() #the set of parentheses was missing so this function wouldn't run
         choice = input("\nSelect an item (1-3) or 'q' to quit: ")
 
         if choice == 'q':
